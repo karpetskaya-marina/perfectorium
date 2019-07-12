@@ -1,0 +1,135 @@
+.table-header {
+  color: #B4B4B3;
+  font-size: 14px;
+  font-family: 'Assistant-Regular';
+  border-bottom: 1px solid #EAECED;
+  margin-right: 10px;
+  @media all and (max-width: 1048px) {
+    [class^="col-"] {
+      font-size: 12px;
+    }
+  }
+  @media all and (max-width: 900px) {
+    [class^="col-"] {
+      flex-shrink: 0;
+    }
+  }
+}
+.table-body {
+  color: #565656;
+  font-family: 'Assistant-Lite';
+  font-size: 16px;
+  margin-right: 10px;
+  @media all and (max-width: 1048px) {
+    font-size: 14px;
+  }
+}
+.table {
+  width: 100%;
+  margin: 8px 0 20px;
+  border-bottom: 1px solid #EAECED;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  @media all and (max-width: 1220px) {
+    .input-search-icon {
+      display: none;
+    }
+  }
+}
+.row {
+  min-height: 20px;
+  display: flex;
+  align-items: baseline;
+}
+.col-1 {
+  flex-basis: 13.8%;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.col-2 {
+  flex-basis: 5.7%;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.col-3 {
+  width: 9.8%;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.col-4 {
+  flex-basis: 6.4%;
+  text-align: center;
+  flex-shrink: 0;
+}
+.large-col-5 {
+  flex-basis: 64.3%;
+}
+.header-large-col {
+  display: flex;
+}
+.col-5 {
+  flex-basis: calc(50% - 20px);
+  margin-right: 20px;
+  &.input-wrap {
+    margin: 0;
+    margin-right: 20px;
+  }
+  @media all and (max-width: 900px) and (min-width: 768px) {
+    flex-shrink: 0;
+  }
+}
+.col-6 {
+  flex-basis: calc(8.9% - 25px);
+  margin-right: 20px;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.col-7 {
+  flex-basis: 6.9%;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.col-8 {
+  flex-basis: 10.9%;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.col-9 {
+  flex-basis: 12%;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.col-10 {
+  flex-basis: 8.6%;
+  text-align: center;
+  @media all and (max-width: 900px) {
+    flex-shrink: 0;
+  }
+}
+.smallest-row {
+  display: flex;
+  width: 100%;
+  margin: 17px 0 20px;
+  &:nth-child(2) {
+    border-top: 1px solid #EAECED;
+    padding-top: 26px;
+  }
+}
+.hidden {
+  display: none;
+}
+.hidden-row-item {
+  flex-grow: 1;
+  & + & {
+    margin-left: 20px;
+    @media all and (max-width: 870px) {
+      margin-left: 2%;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.status-bar {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Assistant-Regular';
+  width: 100%;
+  padding-right: 10px;
+  margin-bottom: 25px;
+  .completed {
+    color: #00B7BD;
+  }
+  &-process {
+    height: 1px;
+    background-color: #EAECED;
+    &-completed {
+      height: 2px;
+      background-color: #00B7BD;
+      display: block;
+      width: 100%;
+    }
+  }
+  &-item {
+    flex-grow: 1;
+    text-align: right;
+    position: relative;
+    margin-right: 30px;
+    &:first-child {
+      width: 8.5%;
+      text-align: left;
+      flex-grow: 0;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 100%;
+      top: 15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    &:first-child::after {
+      background: #00B7BD url('../img/_src/step1-icon.png') 50% 50% no-repeat;
+    }
+    &:nth-child(2)::after {
+      background: #00B7BD url('../img/_src/step2-icon.png') 50% 50% no-repeat;
+    }
+    &:nth-child(3)::after {
+      border: 2px #00B7BD solid;
+      background: url('../img/_src/step3-icon.png') 50% 50% no-repeat;
+    }
+    &:nth-child(4)::after {
+      border: 1px #B4B4B3 solid;
+      background: url('../img/_src/step4-icon.png') 50% 50% no-repeat;
+    }
+  }
+  &-name {
+    padding: 5px;
+    display: inline-block;
+  }
+}
+.in-progress {
+  color: #00B7BD;
+}
